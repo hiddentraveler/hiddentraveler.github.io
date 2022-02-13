@@ -1,0 +1,36 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Journey Through the dark Forest
+theme: PaperMod
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+params:
+  author: hiddentraveler
+  defaultTheme: dark
+  env: production
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  homeInfoParams:
+        Title: Hi there 👋
+        Content: Can be Info, links, about...
+
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: search
+      url: /search
+

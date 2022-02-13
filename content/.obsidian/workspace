@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "e943b117666406cf",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ee238a51110c73b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "My-first-webapp-without-knowing-javascript-and-css.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "239cbc3474d89b6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "970700b5d44edfdd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0e2844b7ed1d614",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d4325ea15698e1dc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "9f1f90accf584c7d",
+    "type": "split",
+    "children": [
+      {
+        "id": "784ec9ed45db3df1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3feda7ac9d5a44bf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "My-first-webapp-without-knowing-javascript-and-css.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6ee238a51110c73b",
+  "lastOpenFiles": [
+    "My-first-webapp-without-knowing-javascript-and-css.md"
+  ]
+}
