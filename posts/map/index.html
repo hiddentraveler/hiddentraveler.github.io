@@ -1,126 +1,138 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randomizer</title>
     <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(39, 39, 39);
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center; /* Center text within body */
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(39, 39, 39);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            /* Center text within body */
+        }
 
-h1 {
-    color: rgb(203, 234, 166);
-    padding: 20px;
-    background-color: rgb(39, 39, 39);
-    margin: 0; /* Remove default margin for h1 */
-}
+        h1 {
+            color: rgb(203, 234, 166);
+            padding: 20px;
+            background-color: rgb(39, 39, 39);
+            margin: 0;
+            /* Remove default margin for h1 */
+        }
 
-#options {
-    width: 80%;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid rgb(141, 153, 174);
-    border-radius: 5px;
-    background-color: rgb(203, 234, 166);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        #options {
+            width: 80%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid rgb(141, 153, 174);
+            border-radius: 5px;
+            background-color: rgb(203, 234, 166);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-#inputContainer {
-    width: 100%;
-    display: flex; /* Add flex display */
-    align-items: center; /* Center items horizontally */
-}
+        #inputContainer {
+            width: 100%;
+            display: flex;
+            /* Add flex display */
+            align-items: center;
+            /* Center items horizontally */
+        }
 
-#inputOption {
-    flex: 1; /* Allow the input to grow and fill the available space */
-    padding: 10px;
-    border: 1px solid rgb(141, 153, 174);
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    text-align: center; /* Center text within input */
-}
+        #inputOption {
+            flex: 1;
+            /* Allow the input to grow and fill the available space */
+            padding: 10px;
+            border: 1px solid rgb(141, 153, 174);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-align: center;
+            /* Center text within input */
+        }
 
- #options p {
-    color: rgb(39, 39, 39); /* Change text color to RGB(39, 39, 39) */
-}
+        #options p {
+            color: rgb(39, 39, 39);
+            /* Change text color to RGB(39, 39, 39) */
+        }
 
-#options button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: rgb(141, 153, 174); /* Default button color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-    transition: background-color 0.3s; /* Add transition for hover effect */
-}
+        #options button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(141, 153, 174);
+            /* Default button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+            /* Add transition for hover effect */
+        }
 
-#options button:hover {
-    background-color: rgb(39,39,39); /* Hover button color */
-}
+        #options button:hover {
+            background-color: rgb(39, 39, 39);
+            /* Hover button color */
+        }
 
-#optionsList {
-    margin-top: 20px;
-    text-align: center; /* Center text within #optionsList */
-    width: 100%;
-}
+        #optionsList {
+            margin-top: 20px;
+            text-align: center;
+            /* Center text within #optionsList */
+            width: 100%;
+        }
 
-#optionsList div {
-    font-size: 14px;
-    margin-bottom: 5px;
-    background-color: rgb(141, 153, 174);
-    padding: 10px;
-    border: 1px solid rgb(203, 234, 166);
-    border-radius: 5px;
-    color: white;
+        #optionsList div {
+            font-size: 14px;
+            margin-bottom: 5px;
+            background-color: rgb(141, 153, 174);
+            padding: 10px;
+            border: 1px solid rgb(203, 234, 166);
+            border-radius: 5px;
+            color: white;
 
-}
+        }
 
-#result {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
-    color: rgb(203, 234, 166);
-}
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: rgb(203, 234, 166);
+        }
 
-.hidden {
-    display: none;
-}
+        .hidden {
+            display: none;
+        }
 
-.visible {
-    display: block;
-}
+        .visible {
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <h1>Map Randomizer</h1>
     <div id="options">
         <p>Enter your options one by one:</p>
-    <div id="inputContainer"> <!-- Wrap the input element in a container -->
-        <input type="text" id="inputOption" placeholder="Enter an option">
-    </div>
-    <br>
+        <div id="inputContainer"> <!-- Wrap the input element in a container -->
+            <input type="text" id="inputOption" placeholder="Enter an option">
+        </div>
+        <br>
         <button onclick="addOption()" id="addOptionButton">Add Option</button>
         <button onclick="randomize()">Randomize</button>
         <button onclick="clearList()">Clear List</button>
     </div>
-    <div id="optionsList" class="hidden"></div>
     <div id="result"></div>
+    <div id="optionsList" class="hidden"></div>
     <script>
         let optionsArray = JSON.parse(localStorage.getItem("optionsArray")) || [];
         let shuffledOptionsArray = [];
@@ -205,16 +217,34 @@ h1 {
 
         // Load options from local storage on page load
         window.addEventListener('load', () => {
-            optionsArray = JSON.parse(localStorage.getItem("optionsArray")) || [];
+            // optionsArray = JSON.parse(localStorage.getItem("optionsArray")) || [];
+            optionsArray = [
+                "Altair Crossing",
+                "Altored DivideRemake",
+                "All the Glitters",
+                "Center command",
+                "sphagnum Bog",
+                "Cloud9 V2" ,
+                "ColoradoV2",
+                "Comet Catcher BARRemake",
+                "Death ValleyHot Zone",
+	        "Ditched V1",
+                "Eye of Horus",
+                "Folsom DamBAR Remake",
+                "Koom ValleyBig Battles",
+                "Theta Crystals",
+                "Valles MarinerisRemake"
+            ]
             shuffledOptionsArray = shuffleArray(optionsArray.slice());
             displayOptions();
             toggleOptionsListVisibility();
         });
-        document.getElementById("inputOption").addEventListener("keyup", function(event) {
+        document.getElementById("inputOption").addEventListener("keyup", function (event) {
             if (event.key === "Enter") {
                 document.getElementById("addOptionButton").click(); // Simulate click on "Add Option" button
             }
         });
     </script>
 </body>
+
 </html>
